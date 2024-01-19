@@ -40,3 +40,25 @@ score="asdf"
 valueInNum=Boolean(score);    
 console.log(typeof valueInNum);
 console.log(valueInNum);   
+
+
+// ************************OPERATION**********************************
+
+let value=3;
+let negvalue=-value;
+console.log(negvalue)
+let posvalue=-negvalue;
+console.log(posvalue);
+
+console.log(2+2)
+console.log(2**3)       //Power
+console.log(2/3)
+
+let str1="Subhadip"
+let str2= " Dey"
+let str3=str1+str2;
+console.log(str3);
+
+
+console.log("1"+2+2)   // o/p: 122
+console.log(1+2+"2")   //  o/p: 32
