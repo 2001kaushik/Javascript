@@ -32,3 +32,22 @@ console.log("2.",n1);
 const n2=arr4.splice(2,2)
 console.log("3.",n2);
 console.log("3.",arr4);  // The original Array is Changed. Only those elements are left which is not Spliced
+
+//+++++++++++++++++++ Array Continuation++++++++++++++++++++++++++++++++
+
+const marvel=['Thor', 'Iron Man', 'Wanda', 'Hulk']
+const dc=['Super man', 'Bat man', 'Flash']
+
+marvel.push(dc)           // 'dc' is treated as one element
+console.log(marvel)
+// to find any value in dc we have to write
+
+console.log(marvel[4][2]) // Flash is the o/p
+
+//marvel.concat(dc)
+console.log("Using Concat",marvel); // Both Push and Concat perform yhe same function
+
+//const allHero=marvel.concat(dc)
+
+const allHero=[...marvel, ...dc]
+console.log("All Heros",allHero);
